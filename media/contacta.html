@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Web IES Camp</h1>
+        <nav class="navegación">
+            <ul>
+                <li class="navegador"><a href="index.html">Información general</a></li>
+                <li class="navegador"><a href="oferta-formativa.html">Oferta formativa</a></li>
+                <li class="navegador"><a href="contacta.html">Contacta con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="Contacta">Contacta con nosotros</h2>
+        <form class="form-container">
+            <fieldset class="section contact-info">
+                <legend>Información de Contacto</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Nombre" required>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" placeholder="Apellidos" required>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Email" required>
+            </fieldset>
+    
+            <fieldset class="section age">
+                <legend>Edad</legend>
+                <select id="age" name="age">
+                    <option value="menor">Menor</option>
+                    <option value="adulto" selected>Adulto/a</option>
+                    <option value="jubilado">Jubilado/a</option>
+                </select>
+            </fieldset>
+    
+            <fieldset class="section education">
+                <legend>Formación</legend>
+                <span>Nivel de estudios:</span><br>
+                <input type="radio" id="sinestudios" name="education" value="Sinestudios">
+                <label for="sinestudios">Sin estudios</label><br>
+                <input type="radio" id="bachillerato" name="education" value="Bachillerato">
+                <label for="bachillerato">Bachillerato</label><br>
+                <input type="radio" id="fp" name="education" value="FP">
+                <label for="fp">Formación Profesional</label><br>
+                <input type="radio" id="otros" name="education" value="Otros">
+                <label for="otros">Otros</label><br>
+            </fieldset>
+    
+            <fieldset class="section message">
+                <legend>Mensaje</legend>
+                <input list="messages" placeholder="Selecciona el grado">
+                <datalist id="messages">
+                    <option value="ASIR">
+                    <option value="DAW">
+                    <option value="DAM">
+                </datalist>
+                <div class="comentario">Escribe tu mensaje:</div>
+                <textarea rows="8" cols="40"></textarea><br>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>Diseñado por IES Camp de Morvedre 2024</footer>
+</body>
+</html>
