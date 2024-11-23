@@ -17,4 +17,4 @@ Bienvenido a mi página web estática utilizando Markdown.
 ## Enlace
 Si deseas visitar otra página de mi web, puedes hacer clic en el siguiente enlace:
 
-[Visita mi página de portafolio](https://github.com/rubiromvlc/markdown-web/tree/main/media)
+[Visita mi página de portafolio](https://github.com/rubiromvlc/markdown-web/blob/main/media/index.html)
